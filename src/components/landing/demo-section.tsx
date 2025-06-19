@@ -10,7 +10,7 @@ const demoSteps = [
   {
     step: 1,
     title: "Ask a Question",
-    description: "Start by asking OpenHands AI to help with any task",
+    description: "Start by asking KugySouL to help with any task",
     code: "Create a Python function to calculate fibonacci numbers"
   },
   {
