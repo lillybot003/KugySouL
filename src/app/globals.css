@@ -61,10 +61,11 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 }
 
@@ -237,10 +238,21 @@
   }
 
   .premium-card {
-    @apply glass-effect rounded-xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
     background: linear-gradient(135deg, 
       rgba(255, 255, 255, 0.1) 0%, 
       rgba(255, 255, 255, 0.05) 100%);
+  }
+  
+  .premium-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
   }
 
   .dark .premium-card {
@@ -318,20 +330,35 @@
 
 /* Additional premium effects */
 .premium-input {
-  @apply glass-effect border-0 bg-transparent backdrop-blur-md transition-all duration-300;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 0;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
 }
 
 .premium-input:focus {
-  @apply ring-2 ring-primary/50 shadow-lg;
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5), 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 0 20px rgba(59, 130, 246, 0.3);
 }
 
 .premium-nav {
-  @apply glass-effect border-b border-white/10;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .premium-footer {
-  @apply glass-effect border-t border-white/10;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Hero section specific styles */
