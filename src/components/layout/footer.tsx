@@ -20,7 +20,7 @@ export function Footer() {
             </Link>
             <p className="text-sm text-muted-foreground max-w-md">
               Ultra premium AI platform that revolutionizes how you work with artificial intelligence. 
-              Experience the future of AI assistance with KugySouL's cutting-edge technology.
+              Experience the future of AI assistance with KugySouL&apos;s cutting-edge technology.
             </p>
           </div>
 
