@@ -38,11 +38,7 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_APP_NAME: process.env.NEXT_PUBLIC_APP_NAME,
   },
 
-  // Image optimization
-  images: {
-    domains: ['minatoz997-backend66.hf.space'],
-    formats: ['image/webp', 'image/avif'],
-  },
+  // Image optimization (merged with export config above)
 
   // Experimental features
   experimental: {
